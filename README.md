@@ -6,7 +6,7 @@ This project is a web-based application that reads RSS feeds. The aim of this pr
 
 ## Installation
 
-The project runs on any browser, web-server is required. To install it on the web server. You can create the `feedreader` folder and copy and paste all the files and folders in the github to the `'feedreader'` folder. Then paste the `'feedreader'` folder to the root directory your web server. Inorder to access the web site for example `localhost`: you just need to type in `http://localhost/feedreader/index.html`.
+The project runs on any browser, web-server is required. To install it on the web server. You just need to copy and paste the `'feedreader'` folder to the root directory your web server. Inorder to access the web site for example `localhost`: you just need to type in `http://localhost/feedreader/index.html`.
 
 
 ## Testing Strategy
