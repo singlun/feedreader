@@ -66,12 +66,13 @@ The project runs on any browser, web-server is required. To install it on the we
 
         In the above snipplet we pass the `'done()'` funtion as a callback to the `'loadFeed()'` method. The `'loadFeed()'` method will execute the `'done()'` function. The `'loadFeed()'` will not complete until its `'done()'` is called from the `'describe'` spec.
 
-            `it('method LoadFeed() is called and completes its work', function(done) {
+            `it('method LoadFeed() is called and completes its work', function(done) {                
+                const feedEntries = document.querySelectorAll('.feed .entry');
+                expect(feedEntries.length).toBeGreaterThan(0);
                 done();
-                expect(entriesLen).toBeGreaterThan(0);
             });`
 
-        As you can see, inorder to check the `'loadFeed()'` method successfully completed it's tasks, we can check the vairable `'entriesLen'`. This variable stores the total number of feeds that retrieved from the RSSFeed results. The variable must be greater than 0 inorder to pass the test.
+        As you can see, inorder to check the `'loadFeed()'` method successfully completed it's tasks, we can check the vairable `'feedEntries'`. This variable stores the total number of feeds that retrieved from the RSSFeed results. The variable must be greater than 0 inorder to pass the test.
 
 4. The fourth part we will test `'New Feed Selection'`. This part we will write a test that ensures when a new feed is loaded by the `'loadFeed()'` function the content will actually changes.
 
