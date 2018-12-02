@@ -93,7 +93,8 @@ $(function() {
 
 
     it('method LoadFeed() is called and completes its work', function(done) {
-      expect(entriesLen).toBeGreaterThan(0);
+      const feedEntries = document.querySelectorAll('.feed .entry');
+      expect(feedEntries.length).toBeGreaterThan(0);
       done();
     });
   });
