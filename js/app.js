@@ -23,7 +23,7 @@ const allFeeds = [
     url: 'http://feeds.feedburner.com/html5rocks'
   }, {
     name: 'Linear Digressions',
-    url: 'http://feeds.feedburner.com/html5rocks'
+    url: 'http://feeds.feedburner.com/udacity-linear-digressions'
   }
 ];
 
